@@ -41,6 +41,8 @@ public:
     /// start new ImGui frame, with fixed 1/60sec frametime
     static void NewFrame();
 
+    /// finish a NewFrame() by rendering it.  Use this instead of ImGui::Render() for ImGui 1.80+
+    static void Render();
 private:
     struct _state {
         _priv::imguiWrapper imguiWrapper;

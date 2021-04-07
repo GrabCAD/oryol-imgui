@@ -63,8 +63,6 @@ imguiWrapper::Setup(const IMUISetup& setup_) {
     io.KeyMap[ImGuiKey_Y] = Key::Y;
     io.KeyMap[ImGuiKey_Z] = Key::Z;
 
-    io.RenderDrawListsFn = imguiRenderDrawLists;
-
     #if ORYOL_RASPBERRYPI
     io.MouseDrawCursor = true;
     #endif

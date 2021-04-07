@@ -49,6 +49,14 @@ IMUI::NewFrame() {
 }
 
 //------------------------------------------------------------------------------
+void
+IMUI::Render() {
+    o_assert_dbg(IsValid());
+    ImGui::Render();
+    state->imguiWrapper.imguiRenderDrawLists(ImGui::GetDrawData());
+}
+
+//------------------------------------------------------------------------------
 ImTextureID
 IMUI::AllocImage() {
     o_assert_dbg(IsValid());
@@ -70,4 +78,3 @@ IMUI::BindImage(ImTextureID img, Id texId) {
 }
 
 } // namespace Oryol
-
