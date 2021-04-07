@@ -4,7 +4,7 @@
 ---
 imports:
     fips-imgui:
-        git:    https://github.com/fips-libs/fips-imgui.git
+        git:    https://github.com/MODit3D/fips-imgui.git
     oryol:
         git:    https://github.com/floooh/oryol.git
 exports:
